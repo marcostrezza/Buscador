@@ -1,0 +1,33 @@
+.search {
+    border: 1px grey solid; /*borde principal*/
+    border-radius: 30px;
+    display: flex; /*desplaza uno al lado del otro*/
+    flex-direction: row; /*en fila*/
+    align-items: center; /*centra los elementos en el contenedor principal*/
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.search:focus-within { /*reacciona al focus*/
+    border: 2px solid;
+}
+
+.search input {
+    border: none; /*sin borde visisble del inout*/
+    outline: none; /*sin linea del input*/
+    flex: auto; /*rellena todo el espaciio sobrante del contenedor principal, moviendo los botones al extremo contrario*/
+}
+
+button {
+    border: none; /*sin bordes en los botones*/
+    background-color: transparent; /*fondo transaprente*/
+    margin-top: 5px; /*margen arriba*/
+    cursor: pointer;
+}
+
+button:hover {
+    color: #0000ff;
+}
+
+/*es responsive por defecto*/
